@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PCA Using 8086 Assembly | Kalyani Murakonda</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+Kalyani
+</div>
+
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../about.html">About</a></li>
+<li><a href="../experience.html">Experience</a></li>
+<li><a href="../projects.html">Projects</a></li>
+<li><a href="../certificates.html">Certificates</a></li>
+<li><a href="../contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>PCA Using 8086 Assembly Language</h1>
+
+<h3>Research-Oriented Computer Architecture Project</h3>
+
+<p>
+
+Implementation of Approximate Principal Component Analysis
+using Oja's Learning Rule on Intel 8086 Architecture
+for dimensionality reduction and machine learning applications.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Overview -->
+
+<section>
+
+<h2 class="section-title">
+Project Overview
+</h2>
+
+<div class="card">
+
+<p>
+
+Principal Component Analysis (PCA) is one of the most
+important dimensionality reduction techniques used in
+Machine Learning and Data Science.
+
+This project explores the implementation of an
+Approximate PCA algorithm on Intel 8086 Assembly Language,
+demonstrating how machine learning concepts can be
+executed on low-level computer architectures.
+
+The project combines concepts from Machine Learning,
+Linear Algebra, Computer Organization & Architecture,
+Assembly Programming and Optimization.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Problem Statement -->
+
+<section>
+
+<h2 class="section-title">
+Problem Statement
+</h2>
+
+<div class="card">
+
+<p>
+
+Modern PCA implementations typically rely on high-level
+programming languages and powerful computing resources.
+
+The objective of this project was to investigate whether
+dimensionality reduction techniques could be implemented
+on resource-constrained hardware such as Intel 8086
+microprocessors.
+
+The project demonstrates how machine learning concepts
+can be adapted for low-level computing environments.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Objectives -->
+
+<section>
+
+<h2 class="section-title">
+Project Objectives
+</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Understand Principal Component Analysis.</li>
+
+<li>Implement PCA using Assembly Language.</li>
+
+<li>Apply Oja's Learning Rule.</li>
+
+<li>Perform dimensionality reduction.</li>
+
+<li>Analyze computational efficiency.</li>
+
+<li>Study low-level AI implementations.</li>
+
+<li>Bridge Machine Learning and Computer Architecture.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- PCA Concept -->
+
+<section>
+
+<h2 class="section-title">
+What is PCA?
+</h2>
+
+<div class="card">
+
+<p>
+
+Principal Component Analysis (PCA) is a statistical
+technique used to reduce the number of features in a dataset
+while preserving maximum information.
+
+PCA transforms the original data into a new coordinate system
+called Principal Components.
+
+These components capture the most important patterns
+and variations in the dataset.
+
+</p>
+
+<br>
+
+<h3>Benefits of PCA</h3>
+
+<ul>
+
+<li>Dimensionality Reduction</li>
+
+<li>Noise Reduction</li>
+
+<li>Feature Extraction</li>
+
+<li>Data Compression</li>
+
+<li>Improved Visualization</li>
+
+<li>Faster Machine Learning Models</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- Oja Rule -->
+
+<section>
+
+<h2 class="section-title">
+Oja's Learning Rule
+</h2>
+
+<div class="card">
+
+<p>
+
+Oja's Learning Rule is an unsupervised learning algorithm
+used to estimate the first principal component of a dataset.
+
+Instead of performing complex matrix decompositions,
+Oja's Rule iteratively updates weight vectors
+to approximate the dominant eigenvector.
+
+This makes it suitable for implementation on
+resource-constrained hardware such as the Intel 8086.
+
+</p>
+
+<br>
+
+<h3>Advantages</h3>
+
+<ul>
+
+<li>Memory Efficient</li>
+
+<li>Computationally Lightweight</li>
+
+<li>Suitable for Embedded Systems</li>
+
+<li>Incremental Learning Capability</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- Datasets -->
+
+<section>
+
+<h2 class="section-title">
+Datasets Used
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h3>2D Dataset</h3>
+<p>Two Feature Input Space</p>
+</div>
+
+<div class="skill-card">
+<h3>3D Dataset</h3>
+<p>Three Feature Input Space</p>
+</div>
+
+<div class="skill-card">
+<h3>Normalized Data</h3>
+<p>Preprocessed Samples</p>
+</div>
+
+<div class="skill-card">
+<h3>Numerical Data</h3>
+<p>Assembly Computation Ready</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Architecture -->
+
+<section>
+
+<h2 class="section-title">
+System Architecture
+</h2>
+
+<div class="card">
+
+<h3>Input Layer</h3>
+
+<ul>
+
+<li>2D Data Samples</li>
+
+<li>3D Data Samples</li>
+
+<li>Feature Values</li>
+
+</ul>
+
+<br>
+
+<h3>Processing Layer</h3>
+
+<ul>
+
+<li>Normalization</li>
+
+<li>Oja's Learning Rule</li>
+
+<li>Weight Updates</li>
+
+<li>Power Iteration Method</li>
+
+</ul>
+
+<br>
+
+<h3>Output Layer</h3>
+
+<ul>
+
+<li>Principal Components</li>
+
+<li>Reduced Dimensions</li>
+
+<li>Variance Analysis</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- Workflow -->
+
+<section>
+
+<h2 class="section-title">
+Implementation Workflow
+</h2>
+
+<div class="card">
+
+<ol>
+
+<li>Load Dataset</li>
+
+<li>Normalize Input Data</li>
+
+<li>Initialize Weight Vector</li>
+
+<li>Apply Oja's Learning Rule</li>
+
+<li>Update Weights Iteratively</li>
+
+<li>Estimate Principal Component</li>
+
+<li>Project Data onto Reduced Space</li>
+
+<li>Generate Final Output</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<!-- Assembly Concepts -->
+
+<section>
+
+<h2 class="section-title">
+8086 Assembly Concepts Used
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+Registers
+</div>
+
+<div class="skill-card">
+Arithmetic Operations
+</div>
+
+<div class="skill-card">
+Memory Addressing
+</div>
+
+<div class="skill-card">
+Loops
+</div>
+
+<div class="skill-card">
+Fixed Point Arithmetic
+</div>
+
+<div class="skill-card">
+Data Movement
+</div>
+
+</div>
+
+</section>
+
+<!-- Tech Stack -->
+
+<section>
+
+<h2 class="section-title">
+Technologies Used
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">8086 Assembly</div>
+
+<div class="skill-card">TASM</div>
+
+<div class="skill-card">MASM</div>
+
+<div class="skill-card">DOSBox</div>
+
+<div class="skill-card">Machine Learning Concepts</div>
+
+<div class="skill-card">Linear Algebra</div>
+
+<div class="skill-card">Power Iteration</div>
+
+<div class="skill-card">Oja Learning Rule</div>
+
+</div>
+
+</section>
+
+<!-- Challenges -->
+
+<section>
+
+<h2 class="section-title">
+Challenges Faced
+</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Limited computational resources.</li>
+
+<li>Lack of floating-point support.</li>
+
+<li>Fixed-point arithmetic implementation.</li>
+
+<li>Memory constraints.</li>
+
+<li>Iterative weight updates.</li>
+
+<li>Optimization of assembly instructions.</li>
+
+<li>Mathematical accuracy preservation.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- Results -->
+
+<section>
+
+<h2 class="section-title">
+Project Outcomes
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h2>PCA</h2>
+<p>Implemented Successfully</p>
+</div>
+
+<div class="skill-card">
+<h2>8086</h2>
+<p>Assembly Execution</p>
+</div>
+
+<div class="skill-card">
+<h2>Oja Rule</h2>
+<p>Applied Successfully</p>
+</div>
+
+<div class="skill-card">
+<h2>Research</h2>
+<p>Focused Implementation</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Learnings -->
+
+<section>
+
+<h2 class="section-title">
+Key Learnings
+</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Principal Component Analysis.</li>
+
+<li>Oja's Learning Rule.</li>
+
+<li>Assembly Language Programming.</li>
+
+<li>Computer Organization & Architecture.</li>
+
+<li>Low-Level Machine Learning Concepts.</li>
+
+<li>Optimization Techniques.</li>
+
+<li>Numerical Computation Methods.</li>
+
+<li>Research Methodology.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- Future Scope -->
+
+<section>
+
+<h2 class="section-title">
+Future Enhancements
+</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Support Higher-Dimensional Data.</li>
+
+<li>Floating Point Arithmetic Integration.</li>
+
+<li>Embedded AI Applications.</li>
+
+<li>Real-Time Sensor Data Processing.</li>
+
+<li>Hardware Acceleration.</li>
+
+<li>Advanced PCA Variants.</li>
+
+<li>FPGA-Based Implementation.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>
+Murakonda Kalyani
+</h3>
+
+<br>
+
+<p>
+Full Stack Developer | AI & ML Enthusiast
+</p>
+
+<br>
+
+<p>
+© 2026 Kalyani Murakonda. All Rights Reserved.
+</p>
+
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

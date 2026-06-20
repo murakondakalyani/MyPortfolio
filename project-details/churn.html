@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Customer Churn Prediction | Kalyani Murakonda</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+Kalyani
+</div>
+
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../about.html">About</a></li>
+<li><a href="../experience.html">Experience</a></li>
+<li><a href="../projects.html">Projects</a></li>
+<li><a href="../certificates.html">Certificates</a></li>
+<li><a href="../contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Customer Churn Prediction</h1>
+
+<h3>Machine Learning Project</h3>
+
+<p>
+
+Predicting customer churn using advanced Machine Learning
+algorithms and data preprocessing techniques to help
+telecommunication companies improve customer retention.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Overview -->
+
+<section>
+
+<h2 class="section-title">
+Project Overview
+</h2>
+
+<div class="card">
+
+<p>
+
+Customer Churn Prediction is a Machine Learning project
+developed to identify customers who are likely to stop
+using a telecom company's services.
+
+The project uses customer demographics, account details,
+service subscriptions and billing information to predict
+future churn behavior.
+
+By identifying at-risk customers early, businesses can
+implement retention strategies and reduce revenue loss.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Problem Statement -->
+
+<section>
+
+<h2 class="section-title">
+Problem Statement
+</h2>
+
+<div class="card">
+
+<p>
+
+Customer acquisition is significantly more expensive than
+customer retention.
+
+Telecom companies lose millions in revenue due to customer
+churn each year.
+
+The goal of this project was to build a predictive model
+that accurately identifies customers likely to leave the
+service before churn actually occurs.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Dataset -->
+
+<section>
+
+<h2 class="section-title">
+Dataset Information
+</h2>
+
+<div class="card">
+
+<h3>Dataset Details</h3>
+
+<br>
+
+<ul>
+
+<li>Telecom Customer Dataset</li>
+
+<li>7043 Customer Records</li>
+
+<li>21+ Features</li>
+
+<li>Binary Classification Problem</li>
+
+<li>Target Variable: Churn</li>
+
+</ul>
+
+<br>
+
+<h3>Important Features</h3>
+
+<ul>
+
+<li>Gender</li>
+
+<li>Senior Citizen</li>
+
+<li>Tenure</li>
+
+<li>Monthly Charges</li>
+
+<li>Total Charges</li>
+
+<li>Internet Service</li>
+
+<li>Contract Type</li>
+
+<li>Payment Method</li>
+
+<li>Customer Support Services</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- Workflow -->
+
+<section>
+
+<h2 class="section-title">
+Project Workflow
+</h2>
+
+<div class="card">
+
+<ol>
+
+<li>Data Collection</li>
+
+<li>Data Cleaning</li>
+
+<li>Exploratory Data Analysis</li>
+
+<li>Feature Engineering</li>
+
+<li>Handling Missing Values</li>
+
+<li>Feature Encoding</li>
+
+<li>Class Balancing using SMOTEENN</li>
+
+<li>Model Training</li>
+
+<li>Hyperparameter Tuning</li>
+
+<li>Model Evaluation</li>
+
+<li>Prediction & Insights</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<!-- Data Preprocessing -->
+
+<section>
+
+<h2 class="section-title">
+Data Preprocessing
+</h2>
+
+<div class="card">
+
+<h3>Data Cleaning</h3>
+
+<ul>
+
+<li>Handled missing values</li>
+
+<li>Removed inconsistencies</li>
+
+<li>Converted data types</li>
+
+<li>Checked duplicate records</li>
+
+</ul>
+
+<br>
+
+<h3>Feature Engineering</h3>
+
+<ul>
+
+<li>Encoded categorical variables</li>
+
+<li>Created machine-readable features</li>
+
+<li>Normalized numerical values</li>
+
+<li>Improved feature quality</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- EDA -->
+
+<section>
+
+<h2 class="section-title">
+Exploratory Data Analysis
+</h2>
+
+<div class="card">
+
+<p>
+
+Several visualizations were created to understand customer
+behavior and churn patterns.
+
+</p>
+
+<br>
+
+<ul>
+
+<li>Churn Distribution Analysis</li>
+
+<li>Contract Type Analysis</li>
+
+<li>Monthly Charges Distribution</li>
+
+<li>Tenure Analysis</li>
+
+<li>Correlation Heatmaps</li>
+
+<li>Feature Importance Analysis</li>
+
+</ul>
+
+<br>
+
+<p>
+
+EDA helped identify important factors influencing customer
+retention and churn.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- SMOTEENN -->
+
+<section>
+
+<h2 class="section-title">
+Handling Class Imbalance
+</h2>
+
+<div class="card">
+
+<h3>Problem</h3>
+
+<p>
+
+The dataset was highly imbalanced because the number of
+customers who stayed was much larger than those who churned.
+
+</p>
+
+<br>
+
+<h3>Solution</h3>
+
+<p>
+
+Applied SMOTEENN (Synthetic Minority Oversampling Technique
++ Edited Nearest Neighbors).
+
+</p>
+
+<ul>
+
+<li>Balanced class distribution</li>
+
+<li>Generated synthetic minority samples</li>
+
+<li>Removed noisy observations</li>
+
+<li>Improved model performance</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- Models -->
+
+<section>
+
+<h2 class="section-title">
+Machine Learning Models Used
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+
+<h3>Random Forest</h3>
+
+<p>
+Ensemble Decision Tree Model
+</p>
+
+</div>
+
+<div class="skill-card">
+
+<h3>XGBoost</h3>
+
+<p>
+Gradient Boosting Model
+</p>
+
+</div>
+
+<div class="skill-card">
+
+<h3>KNN</h3>
+
+<p>
+Distance Based Classification
+</p>
+
+</div>
+
+<div class="skill-card">
+
+<h3>AdaBoost</h3>
+
+<p>
+Adaptive Boosting Model
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Hyperparameter Tuning -->
+
+<section>
+
+<h2 class="section-title">
+Model Optimization
+</h2>
+
+<div class="card">
+
+<p>
+
+Hyperparameter tuning was performed using GridSearchCV
+to identify the best model configurations.
+
+</p>
+
+<br>
+
+<ul>
+
+<li>Cross Validation</li>
+
+<li>Grid Search Optimization</li>
+
+<li>Performance Comparison</li>
+
+<li>Best Parameter Selection</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- Results -->
+
+<section>
+
+<h2 class="section-title">
+Results & Performance
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+
+<h2>97.22%</h2>
+
+<p>
+Prediction Accuracy
+</p>
+
+</div>
+
+<div class="skill-card">
+
+<h2>High</h2>
+
+<p>
+Precision
+</p>
+
+</div>
+
+<div class="skill-card">
+
+<h2>High</h2>
+
+<p>
+Recall
+</p>
+
+</div>
+
+<div class="skill-card">
+
+<h2>High</h2>
+
+<p>
+F1 Score
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Challenges -->
+
+<section>
+
+<h2 class="section-title">
+Challenges Faced
+</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Handling imbalanced classes</li>
+
+<li>Selecting relevant features</li>
+
+<li>Preventing model overfitting</li>
+
+<li>Optimizing model performance</li>
+
+<li>Hyperparameter tuning complexity</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- Key Learnings -->
+
+<section>
+
+<h2 class="section-title">
+Key Learnings
+</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Data Preprocessing Techniques</li>
+
+<li>Feature Engineering</li>
+
+<li>EDA and Data Visualization</li>
+
+<li>SMOTEENN Balancing</li>
+
+<li>Model Evaluation Metrics</li>
+
+<li>Hyperparameter Tuning</li>
+
+<li>Ensemble Learning Methods</li>
+
+<li>Business-Oriented Machine Learning</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- Tech Stack -->
+
+<section>
+
+<h2 class="section-title">
+Tech Stack
+</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">Python</div>
+
+<div class="skill-card">Pandas</div>
+
+<div class="skill-card">NumPy</div>
+
+<div class="skill-card">Matplotlib</div>
+
+<div class="skill-card">Seaborn</div>
+
+<div class="skill-card">Scikit-Learn</div>
+
+<div class="skill-card">XGBoost</div>
+
+<div class="skill-card">SMOTEENN</div>
+
+<div class="skill-card">Jupyter Notebook</div>
+
+</div>
+
+</section>
+
+<!-- Future Improvements -->
+
+<section>
+
+<h2 class="section-title">
+Future Improvements
+</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Deep Learning Implementation</li>
+
+<li>Real-Time Prediction API</li>
+
+<li>Interactive Dashboard</li>
+
+<li>Cloud Deployment</li>
+
+<li>Customer Retention Recommendation System</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<h3>
+Murakonda Kalyani
+</h3>
+
+<br>
+
+<p>
+AI & ML Enthusiast | Full Stack Developer
+</p>
+
+<br>
+
+<p>
+© 2026 Kalyani Murakonda
+</p>
+
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
